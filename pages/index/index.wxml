@@ -1,0 +1,29 @@
+
+<view class="container">
+<!-- 单一图书分类开始 -->
+ <view wx:for="{{epub}}" wx:key="index" >
+  <!-- 图书分类标题开始 -->
+    <view class="title">
+      {{item.title}}
+    </view>
+    <!-- 图书分类标题结束 -->
+    <!-- 图书列表区域开始 -->
+    <view>  
+      <!-- 单一图书信息开始 -->
+        <view wx:for="{{item.books}}" wx:for-item="book" wx:key="index">
+          <navigator url="/pages/detail/detail?id={{book._id}}" class="bookItem">
+            <image class="bookImage" src="http://statics.zhuishushenqi.com{{book.cover}}" mode="widthFix"></image>
+            <view class="bookInfo">
+                <view class="subject">{{book.title}}</view>
+                <view class="majorCate">{{book.majorCate}}</view>
+                <view class="minorCate">{{book.minorCate}}</view>
+                <view class="author">{{book.author}}</view>
+            </view>
+          </navigator>
+        </view>
+       <!--单一图书信息结束  -->
+    </view>
+    <!-- 图书列表区域结束 -->
+  </view>
+<!-- 单一图书分类结束 -->  
+</view>

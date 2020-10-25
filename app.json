@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+    "pages/more/more",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "entryPagePath":"pages/index/index",  
+  "window":{  
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱阅小说",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"light", 
+    "backgroundColor": "#000" 
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "text":"首页",
+        "pagePath":"pages/index/index",
+        "iconPath":"/imgs/index.png",
+        "selectedIconPath":"/imgs/index_sel.png"
+     },
+     {
+      "text":"更多",
+      "pagePath":"pages/more/more",
+      "iconPath":"/imgs/more.png",
+      "selectedIconPath":"/imgs/more_sel.png"
+   }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,73 @@
+.title{
+  font-size:45rpx;
+  font-weight: bold;
+  color:#333;
+  text-align: center;
+  padding-bottom:15rpx;
+  border-bottom:1rpx dotted #999;
+  margin-bottom: 20rpx;
+}
+.image{
+  position: relative;
+  margin-bottom: 20rpx;
+  margin-bottom: 0 auto;
+
+}
+
+.image image{
+  width: 375rpx;
+  display: block;
+  margin: 0 auto;
+}
+.rating{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  padding: 20rpx;
+  background-color: #0aa1eb;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.longIntro{
+  font-size: 28rpx;
+  line-height: 2em;
+
+}
+
+.comments{
+  margin-top: 20rpx;
+}
+.comment{
+  display: flex;
+  align-items: center;
+  margin-top: 35rpx;
+}
+.avatar{
+  flex: 1;
+  margin-left: 10rpx;
+}
+.avatar image{
+  width:150rpx ;
+  height:150rpx;
+  border-radius: 100%;
+}
+.commentTitle{
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+.commentText{
+  font-size: 24rpx;
+  line-height: 2em;
+}
+.commentInfo{
+  flex: 3;
+}
+.noComment{
+  margin-top: 20rpx;
+  text-align: center;
+  color: #333;
+}

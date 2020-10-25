@@ -1,0 +1,24 @@
+
+<view class="container">
+  <view class="title">{{info.title}}</view>
+  <view class="image">
+    <image src="http://statics.zhuishushenqi.com{{info.cover}}" mode="widthFix"></image>
+    <view class="rating">{{info.rating.score}}</view>
+  </view>
+  <view class="longIntro">{{info.longIntro}}</view>
+</view>
+
+<!-- 评论 -->
+<view class="comments" wx:if="{{reviews.length}}">
+  <!-- 单一评论 -->
+  <view class="comment" wx:for="{{reviews}}" wx:key="index">
+    <view class="avatar">
+      <image src="http://statics.zhuishushenqi.com{{item.author.avatar}}"></image>
+    </view>
+    <view class="commentInfo">
+      <view class="commentTitle">{{item.title}}</view>
+      <view class="commentText">{{item.content}}</view>
+    </view>
+  </view>
+</view>
+<view wx:else class="noComment">暂无评论，抢沙发</view>
